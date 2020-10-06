@@ -9,14 +9,17 @@
 </head>
 <body>
     <div class="container text-center">
-        <h1>Number Guesser</h1>
-        <p>Guess a number from <span class="min-num">1</span> to <span class="max-num">10</span></p>
-        <input type="number" class="form-control-inline" id="guess-input">
-        <input type="submit" class="btn btn-primary" value="Submit">
-        <output class="message"></output>
+        <h1 class="bg-primary p-2 display-4 text-light">Number Guesser</h1>
+        <div id="game">
+            <p>Guess a number from <span class="min-num text-primary"></span> to <span class="max-num text-primary"></span></p>
+            <input type="number" class="form-control-inline" id="guess-input">
+            <input type="submit" class="btn btn-primary" id="guess-btn" value="Submit">
+            <div class="message"></div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
